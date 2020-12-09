@@ -1,0 +1,361 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  background-color: #AA0601;
+  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 88px;
+  padding-right: 88px;
+}
+
+.nav img {
+  width: 80px;
+  height: 48px;
+}
+
+.nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .nav-list .nav-element {
+  color: white;
+  font-size: 20px;
+}
+
+.nav .nav-list .nav-element + .nav-element {
+  margin-left: 64px;
+}
+
+.selected {
+  border-bottom: #AA0601 16px solid;
+}
+
+.typelist {
+  height: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.typelist li {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 460px;
+  border-left: #DCDCDC 1px solid;
+  border-right: #DCDCDC 1px solid;
+}
+
+.typelist li img {
+  width: 48px;
+  height: 48px;
+}
+
+.typelist li p {
+  color: black;
+  font-size: 42px;
+  margin-left: 8px;
+}
+
+.typelist li:hover {
+  border-bottom: #AA0601 16px solid;
+  cursor: pointer;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner img {
+  width: 49%;
+}
+
+.glasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 10%;
+}
+
+.glasses h1 {
+  margin-top: 88px;
+  font-size: 42px;
+}
+
+.glasses h2 {
+  font-size: 32px;
+}
+
+.glasses .product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px auto;
+}
+
+.glasses .product-list .product {
+  margin: 10px;
+}
+
+.glasses .product-list .product img {
+  width: 255px;
+  height: 164px;
+}
+
+.glasses .product-list .product .intro-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.glasses .product-list .product .intro-product h3 {
+  font-size: 24px;
+}
+
+.glasses .product-list .product .intro-product p {
+  font-size: 24px;
+  color: #AA0601;
+}
+
+.glasses .product-list .product .color-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.glasses .product-list .product .color-list .color-element:nth-child(1) {
+  background-color: #5F3E2D;
+  width: 24px;
+  height: 24px;
+}
+
+.glasses .product-list .product .color-list .color-element:nth-child(2) {
+  background-color: #B75929;
+  width: 24px;
+  height: 24px;
+}
+
+.glasses .product-list .product .color-list .color-element + .color-element {
+  margin-left: 10px;
+}
+
+.paging {
+  margin: 104px auto;
+}
+
+.paging .paging-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.paging .paging-bar .page {
+  border: black 1px solid;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.paging .paging-bar .selected {
+  color: white;
+  background-color: black;
+}
+
+.paging .paging-bar .highlight {
+  color: black;
+  background-color: #F2F2F2;
+}
+
+.footer {
+  background-color: #AA0601;
+}
+
+.footer span {
+  color: white;
+  margin-left: 20px;
+}
+
+.footer .wrap {
+  padding-top: 48px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+}
+
+.footer .link-wrap, .footer .company-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .company-wrap {
+  padding-top: 22px;
+}
+
+.footer .link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.footer .link-list .link-element {
+  color: white;
+  vertical-align: middle;
+}
+
+.footer .link-list .link-element + .link-element {
+  margin-left: 48px;
+}
+
+.footer .app-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .app-list img {
+  width: 48px;
+  margin-left: 32px;
+}
+
+.footer .contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
+  padding-bottom: 22px;
+}
+
+.footer .contact-list img {
+  width: 38px;
+  display: inline-block;
+}
+
+.footer .contact-list a {
+  font-size: 36px;
+}
+
+.footer .contact-list li + li {
+  margin-top: 26px;
+}
+
+.contact-list + .company-wrap {
+  border-top: 1px solid white;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright img {
+  width: 80px;
+  height: 48px;
+}
+
+.other-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.other-list li {
+  margin-left: 62px;
+}
+
+@media (max-width: 375px) {
+  .nav {
+    display: block;
+    background-color: #AA0601;
+    height: 108px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav .brand-img {
+    display: block;
+  }
+  .nav .brand-img img {
+    width: 48px;
+    height: 29px;
+  }
+  .nav .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav .nav-list .nav-element {
+    color: white;
+    font-size: 20px;
+    width: 40%;
+    border: 1px white solid;
+    padding: auto;
+  }
+  .nav .nav-list .nav-element + .nav-element {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=all.css.map */
