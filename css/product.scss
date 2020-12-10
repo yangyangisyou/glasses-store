@@ -30,15 +30,11 @@ a {
   }
 }
 
-.selected {
-  border-bottom: #AA0601 16px solid;
-}
-
-.typelist {
+.type-list {
   height: 88px;
   display: flex;
   justify-content: center;
-  li {
+  .type-option {
     color: white;
     display: flex;
     justify-content: center;
@@ -46,7 +42,6 @@ a {
     width: 460px;
     border-left: #DCDCDC 1px solid;
     border-right: #DCDCDC 1px solid;
-    
     img {
       width: 48px;
       height: 48px;
@@ -57,9 +52,12 @@ a {
       margin-left: 8px;
     }
   }
-  li:hover {
+  .type-option:hover {
     border-bottom: #AA0601 16px solid;
     cursor: pointer;
+  }
+  .selected {
+    border-bottom: #AA0601 16px solid;
   }
 }
 
@@ -75,7 +73,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto 10%;
+  margin: auto 39px;
   h1 {
     margin-top: 88px;
     font-size: 42px;
@@ -86,9 +84,11 @@ a {
   .product-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: 40px auto;
     .product {
-      margin: 10px;
+      margin: 36px 15px;
       img {
         width: 255px;
         height: 164px;
@@ -182,9 +182,10 @@ a {
     display: flex;
     img {
       width: 48px;
+    }
+    li + li {
       margin-left: 32px;
     }
-    
   }
   .contact-list {
     display: flex;
@@ -224,43 +225,270 @@ a {
   }
 }
 
-
+.logo-sm {
+  display: none;
+}
 
 @media (max-width: 767px) {
-  
+  .nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 50%;
+    }
+  }
+  .type-list {
+    .type-option {
+      img {
+        width: 32px;
+        height: 25px;
+      }
+      p {
+        font-size: 28px;
+      }
+    }
+    .type-option:hover {
+      border-bottom: #AA0601 8px solid;
+      cursor: pointer;
+    }
+    .selected {
+      border-bottom: #AA0601 8px solid;
+    }
+  }
+  .footer {
+    .wrap {
+      padding-top: 48px;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-bottom: 20px;
+    }
+    .contact-list {
+      img {
+        width: 18px;
+      }
+      a {
+        font-size: 20px;
+      }
+      img + a {
+        margin-left: 15px;
+      }
+      li + li {
+        margin-top: 26px;
+      }
+    }
+    .company-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+    .copyright {
+      img {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 375px) {
   .nav {
-  display: block;
-  background-color: #AA0601;
-  height: 108px;
-  // justify-content: space-between;
-  // align-items: center;
-  padding-left: 0;
-  padding-right: 0;
+    display: flex;
+    background-color: #AA0601;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
     .brand-img {
         display: block;
-        // display: block;
-        // margin: 0 auto;
+        padding: 10px;
         img {
-        width: 48px;
-        height: 29px;
+          width: 48px;
+          height: 29px;
         }
     }
     .nav-list {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
         .nav-element {
-            color: white;
-            font-size: 20px;
-            width: 40%;
-            border: 1px white solid;
-            padding: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 20px;
+          width: 49%;
+          border: 1px white solid;
+          a {
+            padding: 10px;
+          }
+          
         }
         .nav-element + .nav-element {
             margin-left: 0;
         }
+    }
+  }
+  .type-list {
+    height: 35px;
+    .type-option {
+      img {
+        width: 14.99px;
+        height: 11.78px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .type-option:hover {
+      border-bottom: #AA0601 4px solid;
+      cursor: pointer;
+    }
+    .selected {
+      border-bottom: #AA0601 4px solid;
+    }
+  }
+
+  .glasses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    .product-list {
+      margin: 20px auto;
+      .product {
+        margin: 32px 15px;
+        img {
+          width: 255px;
+          height: 164px;
+        }
+        .intro-product {
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .color-list {
+          .color-element:nth-child(1) {
+            background-color: #5F3E2D;
+            width: 15px;
+            height: 15px;
+          }
+          .color-element:nth-child(2) {
+            background-color: #B75929;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .paging {
+    margin: 40px auto;
+    .paging-bar {
+      .page {
+        border: black 1px solid;
+        padding: 8px 10px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+      .selected {
+        color: white;
+        background-color: black;
+      }
+      .highlight {
+        color: black;
+        background-color: #F2F2F2;
+      }
+    }
+  }
+
+  .footer {
+    .wrap {
+      padding-top: 23px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 23px;
+    }
+    .footer-main {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    .company-wrap {
+      padding-top: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      span {
+        margin-left: 0;
+        font-size: 14px;
+      }
+    }
+    .link-list {
+      display: none;
+    }
+    .app-list {
+      display: flex;
+      img {
+        width: 24px;
+      }
+      li + li {
+        margin-left: 24px;
+      }
+      
+    }
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 32px;
+      padding-bottom: 22px;
+      img {
+        width: 14px;
+        display: inline-block;
+      }
+      a {
+        font-size: 16px;
+      }
+      li + li {
+        margin-top: 7px;
+      }
+    }
+  }
+  .copyright-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    .other-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 7px;
+      li {
+        margin-left: 0;
+      }
+      li + li {
+        margin-top: 8px;
+      }
+    }
+    .logo-sm {
+      display: inline-block;
+      width: 46px;
+      height: 27.93px;
+      
     }
   }
 }
